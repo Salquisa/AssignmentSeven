@@ -9,10 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var textField: UITextField!
+    @IBOutlet var displayTextLabel: UILabel!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //1. Set the displayTextLabel text to a string with no characters
+        
+        self.displayTextLabel.text=""
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +32,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+//Create the IBAction
 
 }
 
