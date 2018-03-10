@@ -33,10 +33,15 @@ class ViewController: UIViewController {
     }
 
 //Create the IBAction
-    
     @IBAction func setLabelButtonPressed(_ sender: Any) {
+    //2. Create a local variable of type String to hold the user input.
+    var userText: String!
         
+    //3. Set userText to the current text in the text field or user input text.
+    userText = self.textField.text
         
+    //4. Set the displayTextLabel to the user input text.
+    self.displayTextLabel.text=userText
         
         
     }
